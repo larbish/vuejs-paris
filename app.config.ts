@@ -1,13 +1,13 @@
 export default defineAppConfig({
   header: {
-    title: 'Demo',
-    icon: ''
+    title: 'Demo Studio',
+    icon: 'tabler:brand-nuxt'
   },
   footer: {
     display: true
   },
   socials: {
-    github: '',
-    twitter: ''
+    github: 'larbish',
+    twitter: '_larbish'
   }
 })
