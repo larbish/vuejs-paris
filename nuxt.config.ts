@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/content']
+  extends: '@nuxt/ui-pro',
+  modules: ['@nuxt/content', '@nuxt/ui'],
+  ui: {
+    icons: ['mdi']
+  }
 })
