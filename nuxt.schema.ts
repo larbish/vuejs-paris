@@ -16,6 +16,7 @@ export default defineNuxtSchema({
       }),
       github: field({
         type: 'string',
+        title: 'Github',
         description: 'Github social handle',
         icon: 'i-mdi-github'
       })
