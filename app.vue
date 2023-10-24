@@ -1,5 +1,5 @@
 <template>
-  <UMain>
+  <div>
     <UHeader>
       <template #logo>
         <Icon v-if="header.icon" :name="header.icon" class="h-10 w-10" />
@@ -11,9 +11,9 @@
         <UColorModeButton />
       </template>
     </UHeader>
-    <UContainer>
+    <UMain>
       <NuxtPage />
-    </UContainer>
+    </UMain>
     <UFooter
       v-if="footer.display"
     >
@@ -40,7 +40,7 @@
         </div>
       </template>
     </UFooter>
-  </UMain>
+  </div>
 </template>
 
 <script setup lang="ts">

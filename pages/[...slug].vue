@@ -1,15 +1,17 @@
 <template>
-  <UPage>
-    <UPageHeader :title="page.title" :description="page.description" />
-    <template #left>
-      <UAside>
-        <UNavigationTree :links="mapContentNavigation(navigation)" />
-      </UAside>
-    </template>
-    <UPageBody prose>
-      <ContentRenderer v-if="page.body" :value="page" />
-    </UPageBody>
-  </UPage>
+  <UContainer>
+    <UPage>
+      <UPageHeader :title="page.title" :description="page.description" />
+      <template #left>
+        <UAside>
+          <UNavigationTree :links="mapContentNavigation(navigation)" />
+        </UAside>
+      </template>
+      <UPageBody prose>
+        <ContentRenderer v-if="page.body" :value="page" />
+      </UPageBody>
+    </UPage>
+  </UContainer>
 </template>
 
 <script setup lang="ts">
