@@ -3,11 +3,11 @@ import { field } from '@nuxthq/studio/theme'
 
 export default defineNuxtSchema({
   appConfig: {
-    /**
-     * Social links
-     * @studioIcon i-mdi-web
-     */
     socials: {
+      $schema: {
+        title: 'Socials links',
+        tags: ['@studioIcon i-mdi-web']
+      },
       twitter: field({
         type: 'string',
         title: 'Twitter',
@@ -21,11 +21,11 @@ export default defineNuxtSchema({
         icon: 'i-mdi-github'
       })
     },
-    /**
-     * Header configuration
-     * @studioIcon i-mdi-page-layout-header
-     */
     header: {
+      $schema: {
+        title: 'Header configuration',
+        tags: ['@studioIcon i-mdi-page-layout-header']
+      },
       title: field({
         type: 'string',
         title: 'Header',
@@ -39,11 +39,11 @@ export default defineNuxtSchema({
         icon: 'i-mdi-image-filter-center-focus-strong-outline'
       })
     },
-    /**
-     * Footer configuration
-     * @studioIcon i-mdi-page-layout-footer
-     */
     footer: {
+      $schema: {
+        title: 'Footer configuration',
+        tags: ['@studioIcon i-mdi-page-layout-footer']
+      },
       display: field({
         type: 'boolean',
         title: 'Display',
