@@ -11,7 +11,7 @@
         <UColorModeButton />
       </template>
     </UHeader>
-    <UMain>
+    <UMain class="min-h-[calc(100vh-var(--header-height)-120px)]">
       <NuxtPage />
     </UMain>
     <UFooter
